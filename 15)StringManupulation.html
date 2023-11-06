@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manupulation</title>
+</head>
+<body>
+    <script>
+        let str = "Hi Mohammad Shoaib Khan ";
+        console.log(str);
+
+        console.log(`${str} how are you `);
+
+        // "concat"
+        str2 = 'I am fine'
+        let strConcat = str.concat(str2);
+        console.log(strConcat);
+
+        console.log(strConcat[1]);
+
+        // SubStr is first character index then length
+        console.log(strConcat.substr(1,5));
+
+        //substring is first character index and the last character index
+        console.log(strConcat.substring(1,8));
+
+        //index of
+        let newIndex = 'Hi I am learning JavaScript language';
+        console.log(newIndex.indexOf('I',6)); // -1 when substring is not found
+
+        console.log(newIndex.lastIndexOf('am')); // -1 when substring is not found
+
+        //trim 
+        console.log(newIndex.trim()); // trimstart(), and trimend()
+
+        //toUpperCase
+        console.log(newIndex.toUpperCase()); // toLowerCase()
+
+        //Replace
+        console.log(newIndex.replace('learning','Doing'));
+
+        //Incldes
+        console.log(newIndex.includes('learning'));
+
+
+    </script>
+</body>
+</html>
