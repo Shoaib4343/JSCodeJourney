@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+       
+
+        let Book = ['Englis','Urdu','Maths','Physics']
+        console.log(Book.length);//Length of Array
+
+        Book.push('Hindi') //Add Hindi at the end
+        console.log(Book);
+
+        Book.pop(); //Remove one element from the end of the array
+        console.log(Book);
+
+        Book.unshift('hindi'); //Add one element at the start of the array
+        console.log(Book);
+
+        Book.shift(); //Remove one element from the start of the array
+        console.log(Book);
+
+        Book.splice(2,1); //Remove one element from the end of the array
+        console.log(Book);
+
+        //Splice (1,1,imran) the first element is index, second is cound, third is insert value
+
+        // const myArray = [1, 2, 3, 4, 5];
+        // console.log(myArray);
+        
+        // myArray.splice(2, 0, 6); // Add 6 at index 2
+        // console.log(myArray);
+
+        // myArray.splice(2, 2); // Remove 2 elements starting from index 2
+        // console.log(myArray);
+
+        // myArray.splice(2, 1, 6); // Update the element at index 2 to 6
+        // console.log(myArray);
+
+
+
+
+
+
+
+
+
+
+
+        // Book.length = 0; //Empty array
+        // Book = []; //Empty array
+        // console.log(Book);
+
+        console.log(Book.indexOf('Physics')); //search for bio index in array
+
+
+        let NewBook = ['Englis','Urdu','Maths','Physics','Chemestry','c++','Python','Java','JacvaScript','DSA'];
+        
+        let joinArray = NewBook.join("-");
+        console.log(joinArray);
+
+        
+
+
+        let txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, at natus molestias nulla eius exercitationem, molestiae velit aut ducimus voluptatibus obcaecati voluptatum, repudiandae accusantium repellendus quisquam sed repellat eligendi! Excepturi, ducimus odio velit reiciendis cumque iure alias itaque neque, illum commodi sapiente sequi mollitia totam sit molestias numquam impedit iusto dignissimos laboriosam! Minus, quo qui id nam sed beatae quas eveniet omnis! Vitae architecto officia assumenda quod quo tempore illum, deleniti neque sapiente debitis ullam beatae rerum quasi est sit asperiores pariatur cum quisquam libero sequi ratione voluptatum illo non. Minus iure debitis recusandae dignissimos error porro, quia sunt tempore.";
+
+        console.log(txt.split(' '));
+
+        let BookConcat = Book.concat(NewBook);
+        console.log(BookConcat);
+
+        for(let i=0; i<BookConcat.length; i++){
+            console.log(`Element ${i} book ${BookConcat[i]}`);
+        }
+
+
+       BookConcat.forEach(myFunction);
+       function myFunction(value) {
+        console.log(value);
+       }
+       
+
+    </script>
+</body>
+</html>
