@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //There are four ways to create functions in objects
+        let person = {
+            First_Name : "Mohammad",
+            Last_Name : "Shoaib",
+
+            // //Third Way to create Annonymous functions within objects
+            // SayHellow: function(){
+            //     document.write("Hellow Words!");
+            // }
+
+            //Fourth Way to create as in es6
+
+            SayHello (){
+                document.write("Hello World!");
+            }
+        };
+
+        // //First one is to create a function and assing it to the object
+        // function SayHello(){
+        //     document.write("Hellow World!");
+        // }
+        // person.SayHello = SayHello;
+        // person.SayHello();
+
+
+
+        // // Second Way is to assing it as a annonymous function
+        // person.SayHello = function(){
+        //     document.write("Hellow World");
+        // }
+        // person.SayHello();
+
+
+        person.SayHello();
+    </script>
+</body>
+</html>
