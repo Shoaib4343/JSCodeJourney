@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {   // In js object is created as let pertson = {};
+            first_name: 'Shoaib',
+            last_name : 'khan',
+            address : 'GunbadMaira'
+        }; 
+
+        // // We can acess the object properties by two ways:
+        // console.log(person.first_name); //First way by using . operator 
+        // console.log(person['last_name']); // Second way by using as array
+
+        // person.first_name = 'Mohammad'; //We can also change the assinge value out side the object
+        // console.log(person.first_name);
+
+        // person.age = 20; //We can also add new Valrialbe and value to the object form the outside
+        // console.log(person.age);
+
+        // delete person.first_name; //Delete the first name
+        // console.log(person);
+
+        // console.log('height' in person); //if height exiset it return true else false
+
+
+        //for in 
+
+        for(let key in person){
+            console.log(key,': ', person[key]);
+        }
+
+    </script>
+</body>
+</html>
