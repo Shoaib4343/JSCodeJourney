@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function Student(first,last,age,cls){   //Object constructor
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.class = cls;
+            this.address = 'Mingora Swat';
+        }
+        Student.prototype.College = "Digree College"; //prototype
+
+        let std1 = new Student('Shoaib','khan',22,7);
+        std1.countery = "pakistan";
+        console.log(std1);
+
+        let std2 = new Student('Shoaib','khan',22,7);
+        std2.job = 'Doctor';
+        console.log(std2);
+
+        let std3 = new Student('Shoaib','khan',22,7);
+        console.log(std3);
+
+        let std4 = new Student('Shoaib','khan',22,7);
+        console.log(std4);
+
+        console.log(Student);
+    </script>
+</body>
+</html>
