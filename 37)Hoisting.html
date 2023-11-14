@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hoisting mean to left or pull ( kenshna ya otana )move in current escope 
+        // like globle variation is in the top of the code and if variable in the function 
+        // is then it wil be top in the current function 
+        //in js bofore runssing the code js interpreter read all the code that where 
+        // is declaration and by itself through it in the top of the code it might be the 
+        // varialbe or function declaration but only declarations like var x; not even var x = 10 just declatin vat x;;
+        // but if you put like var x; and x = 10; it will only left the var x; not x= 10;
+
+        // undefined is only in var not in let or const declarations give error like not initialized
+        // prevents from without declaration variables we use "use strict"
+
+        // var x; // in js when you declare a variable with var it assing undefined to the variable
+
+        
+
+        hello(); //we call this function first
+
+        function hello(){ //then create the function 
+            console.log("hello world");
+        }
+
+        // the js interpreter read the code and where the declaration put it in the top in curernt escope
+
+
+        
+       
+        console.log(a);
+        var a;
+        a=10;
+        // it put the declaration in the top and in var intialize the undefined
+
+
+        x=10;
+        console.log(x);
+        var x;
+
+
+        y=10;
+        console.log(y);
+        let y; //but not in let it put in the top but not assigned undefined and give error of not initialized
+
+        
+        console.log(z);
+        
+        let z;
+        z=10;
+        document.getElementById
+        
+    </script>
+</body>
+</html>
