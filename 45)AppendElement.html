@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="intro">
+        <li >List One</li>
+        <li>List Two</li>
+       
+    </ul>
+
+
+    <script>
+        let elm = document.getElementById("intro");
+        let h1 = document.createElement("h1");
+
+        h1.className = 'h1-class class2';
+        h1.id = 'id';
+
+        let text = document.createTextNode("this is heading tage");
+
+        h1.appendChild(text);
+        elm.appendChild(h1);
+
+        let ul = document.createElement('li');
+        ul.textContent = "This is ul tag";
+        elm.appendChild(ul);
+    </script>
+</body>
+</html>
