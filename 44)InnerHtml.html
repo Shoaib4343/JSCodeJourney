@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+
+        <p>Hellow this is paragraph tag</p>
+    </div>
+
+    <script>
+
+        //Fech the data
+        let elm = document.getElementById("intro");
+        let content = elm.innerHTML;
+        console.log(content);
+
+        //Change or Manupulate the data within the tage 
+        elm.innerHTML = "<h1>This is headin tage</h1>";
+        
+    </script>
+</body>
+</html>
