@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="intro">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list  4</li>
+    </ul>
+
+
+    <script>
+        // let parant = document.getElementById("intro");
+
+        // let newElm = document.createElement("li");
+        // newElm.textContent = "It is New List";
+
+        // let position = parant.firstElementChild.nextElementSibling;
+
+        // parant.insertBefore(newElm, position);
+
+
+
+        let new_parent = document.body;
+
+        let new_elm = document.createElement("h2");
+        new_elm.textContent= 'Hi this is heading h2 tage';
+
+        let new_position = document.getElementById("intro");
+
+        new_parent.insertBefore(new_elm, new_position);
+    </script>
+</body>
+</html>
