@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" style="color: blue; background-color: red;">Login</button>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        // 1st way:
+        // btn.style.cssText = "color: white";  //when we use .style.cssText it deletes all the styles attribute inline css in html.
+        btn.style.cssText += "color: white"; //But when we use btn.style.css += ""; it add the attritbut to the inline css but do not delete the previos attribute of inlince css
+
+        // Second way
+        btn.setAttribute("style","border: 1px solid green; padding: 10px; margin: 10px; font-size:20px; font-weight:bold");
+
+        // Third way:
+
+        // We can add only One attribute at a time in this third way
+        btn.style.color = "blue";
+
+        
+    </script>
+</body>
+</html>
