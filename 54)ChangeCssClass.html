@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color: green;
+            background-color: yellow;
+        }
+        .dim{
+            padding: 100px;
+            border: 5px solid black;
+            border-radius: 20%;
+        }
+        .newdim{
+            padding: 100px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="color dim" id="box">
+        <p>This is Dumy text</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        // add class by className 
+        // console.log(box.className);
+        // box.className += " newClassName";
+
+
+        // see class by using loops
+        // for(let css of box.classList){
+        //     console.log(css);
+        // }
+
+
+        // add new class by using classlist.add
+        box.classList.add("NewclassName");
+
+        //we can also remove class by using classlist.remove
+        box.classList.remove('NewclassName');
+
+        //can also replace class by using classlist.replace
+        box.classList.replace('dim', 'newdim');
+
+        //contains
+        let result = box.classList.contains("color");
+        console.log(result);
+
+
+        box.classList.toggle('shahab');
+    </script>
+</body>
+</html>
