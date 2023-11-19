@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color: green;
+            background-color: yellow;
+        }
+        .dim{
+            padding: 100px;
+            border: 5px solid black;
+            border-radius: 20%;
+        }
+        .newdim{
+            padding: 100px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="color dim" id="box">
+        <p>This is Dumy text</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        //offset is with border 
+        let offsetwith = box.offsetWidth;
+        let offsetheight = box.offsetHeight;
+
+
+
+
+
+
+        // Client is wihtout border
+        let clienwidth = box.clientWidth;
+        let clientHeight = box.clientHeight;
+        console.log("clienwidth", clienwidth);
+        console.log("clientHeight", clientHeight);
+        console.log("offsetWidth", offsetwith);
+        console.log("offsetHeight", offsetheight);
+    </script>
+</body>
+</html>
