@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Clilck me</button>
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        function OnClick1(){
+            console.log("OnClick One");
+        }
+
+        function OnClick2(){
+            console.log("OnClick Two");
+        }
+
+        btn.addEventListener("click", OnClick1);
+        btn.addEventListener("click", OnClick2);   
+
+        //can remove the event listener Works when it is add with addEventListener and don't use annonymous functions but use the external function
+        btn.removeEventListener("click",OnClick2);
+    </script>
+</body>
+</html>
