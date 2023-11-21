@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+
+    <script>
+        function OnClick(){
+            alert("Button is Click!");
+        }
+
+        let btn = document.getElementById("btn");
+        // btn.addEventListener('click', OnClick);
+        btn.addEventListener("click",function(){
+            alert("Button is Click! with Annonymous Function");
+        })
+        btn.addEventListener("mouseover",function(){
+            console.log("Mouse is hover");
+        });
+
+        btn.addEventListener("mouseout",function(){
+            console.log("Mouse out");
+        });
+    </script>
+</body>
+</html>
