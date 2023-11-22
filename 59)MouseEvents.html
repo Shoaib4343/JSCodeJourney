@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <button id="btn" onclick="btnClick()" ondblclick="dbClick()" onmouseover="btnOver()" onmouseout="btnHoverOut()" onmouseup="btnclickup()" onmousedown="btnClickDown()" oncontextmenu="oncontextmenuone()">Click Me</button>
+
+
+    <script>
+        function btnClick(){
+            console.log("btn is clicked");
+        }
+        function dbClick(){
+            console.log("dbClick is clicked");
+        }
+        function btnOver(){
+            console.log("Mouse over ");
+        }
+        function btnHoverOut(){
+            console.log("Mouse out ");
+        }
+        function btnclickup(){
+            console.log("mosue button is clicked up");
+        }
+        function btnClickDown(){
+            console.log("mouse down button is clicked down");
+        }
+
+        function oncontextmenuone(){
+            console.log("oncone menu is clicked is when write button of mouse  is clicked");
+        }
+    </script>
+</body>
+</html>
