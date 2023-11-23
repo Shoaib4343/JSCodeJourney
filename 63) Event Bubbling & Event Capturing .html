@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        #div{
+            margin: 100px 30px;
+            padding: 100px;
+            background-color: blue;
+        }
+        #btn{
+            background-color: yellow;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <button id="btn">Button</button>
+    </div>
+
+
+
+    <script>
+        let div = document.getElementById("div");
+        let btn = document.getElementById("btn");
+
+
+        btn.addEventListener("click",btnClick);   //true
+        div.addEventListener("click",divClick);  //true
+        document.body.addEventListener("click",bodyClick);
+
+        function btnClick(){
+            console.log("btnClick");
+            // event.stopPropagation();        
+        }
+
+        function divClick(){
+            console.log("divClick");
+        }
+
+        function bodyClick(){
+            console.log("bodyClick");
+        }
+
+    </script>
+</body>
+</html>
