@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <button id="btn"><a href="https://www.google.com">Google</a></button>
+    
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        btn.addEventListener("click", function(event){
+            console.log("Google clicked");
+            event.preventDefault(); //  preventDefault method is a function in JavaScript that is used to stop the default action associated with a particular event.
+        });
+
+
+    </script>
+</body>
+</html>
