@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let x = [];
+        let sum = 0;
+        
+    
+        for (let i = 0; i < 5; i++) {
+            let paper = parseInt(prompt("Paper Num " + (i + 1) + ": "));
+            
+            x.push(paper);
+            sum += paper;
+        }
+        let average = (sum / 5);
+    
+        for (let i = 0; i < 5; i++) {
+            document.write("Marks of paper " + (i + 1) + ": " + x[i] + "<br>");
+        }
+    
+        document.write('Total marks: ', sum + "<br>");
+        document.write("Average marks: ", average + "<br>");
+        
+    
+        if (average >= 90) {
+            document.write('Grade: A');
+        } else if (average >= 80) {
+            document.write('Grade: B');
+        } else if (average >= 70) {
+            document.write('Grade: C');
+        } else if (average >= 60) {
+            document.write('Grade: D');
+        } else {
+            document.write('Grade: F');
+        }
+    </script>
+    
+    </script>
+</body>
+</html>
