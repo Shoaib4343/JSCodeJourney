@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1">Clear setTimeout</button>
+    <button id="btn2">Clear setTimeout</button>
+
+    <script>
+        //setTimeout will call only one time
+        let setTimeouut = setTimeout(myFun,3000);
+        function myFun(){
+            alert("3 seconds passed");
+            console.log("3 seconds passed");
+        }
+
+        let clearTimeouut = document.getElementById("btn1");
+        clearTimeouut.addEventListener("click", function(){
+            console.log("clear timeouut clicked");
+            clearTimeout(setTimeouut);
+        });
+
+
+        let settimeIntrvl = setInterval(myfun2, 2000);
+
+        function myfun2(){
+            console.log("settimeinterval ");
+        }
+
+
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",function(){
+            console.log("clear tim interval");
+            clearInterval(settimeIntrvl);
+        });
+    </script>
+</body>
+</html>
