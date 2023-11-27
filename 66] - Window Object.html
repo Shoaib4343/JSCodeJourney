@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <button id="btn">Google</button>
+    <button id="btn2">Close</button>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let btn = document.getElementById("btn");
+        let btn2 = document.getElementById("btn2");
+        let win;
+
+
+        let url = "https://www.google.com";
+        let feature = "width=500px; height=500px";
+
+
+        
+
+        btn.addEventListener("click", function(){
+            win = window.open(url, "google", feature);
+        });
+
+        btn2.addEventListener("click", function(){
+            win.close;
+        });
+
+
+      
+
+
+
+
+
+
+
+
+
+
+        // console.log(window.innerHeight);
+        // console.log(window.innerWidth);
+        // console.log(window.outerHeight);
+        // console.log(window.outerWidth);
+
+
+    </script>
+</body>
+</html>
