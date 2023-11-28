@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="location" onclick="location_fun()">Location</button> <br>
+    <button id="href" onclick="href_fun()">href</button><br>
+    <button id="assign" onclick="assign_fun()">assign</button><br>
+    <button id="replace" onclick="replace_fun()">replace</button><br>
+    <button id="reload"  onclick="reload_fun()">reload</button><br>
+
+
+
+
+
+    <script>
+
+        function location_fun(){
+            window.location = "http://www.google.com";
+        }
+        
+
+        function href_fun(){
+            location.href = "http://www.yahoo.com";
+        }
+        function assign_fun(){
+            location.assign("http://www.youtube.com");
+        }
+        function replace_fun(){
+            location.replace("http://www.google.com");
+        }
+        function reload_fun(){
+            location.reload();
+        }
+
+
+
+
+
+        // console.log(location.href);
+        // console.log(location.pathname);
+        // console.log(location.protocol);
+    </script>
+</body>
+</html>
