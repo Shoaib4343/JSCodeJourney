@@ -58,7 +58,7 @@
         cel.addEventListener("input", function(){
             let user_input_cel_value = this.value;
             let new_fah = ((user_input_cel_value * 9/5) + 32);
-            if (Number.isInteger(new_fah)) {
+            if (!Number.isInteger(new_fah)) {
                 new_fah = new_fah.toFixed(4);
             }
             fah.value = new_fah;
