@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+       #form_contaner{
+        background-color: white;
+        padding: 50px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0,.3) ;
+       }
+       h2{
+        margin: 0px 0px 10px 0px;
+        color: teal;
+       }
+       input{
+        width: 200px;
+        margin: 10px 0px;
+        padding: 15px;
+        outline: teal;
+        box-shadow: 2px 2px 10px #00808069;
+        border: 1px solid rgba(0, 0, 0, 0.086);
+       }
+       input[type="submit"]{
+        width: 225px;
+        background-color: teal;
+        border: none;
+        color: white;
+       }
+       .error{
+        color: red;
+        margin: 0px;
+        text-align: left;
+       }
+    </style>
+</head>
+<body>
+    <div id="form_contaner">
+        <h2>Login</h2>
+        <form action="" id="form" onsubmit="return form_validate()">  
+            <input type="text" name="" id="username" placeholder="Username"><br>
+            <p id="error_username" class="error"></p>
+            <input type="password" name="" id="password" placeholder="password">  <br>
+            <p id="error_password" class="error"></p>
+            <input type="submit" name="" id="">
+        </form>
+    </div>
+
+
+
+
+    <script>
+        function form_validate(){
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+            let flag = 1;
+
+            if(username.value == ""){
+                document.getElementById("error_username").innerHTML = "Username Required";
+                flag = 0;
+            }else if(username.value.length < 4){
+                document.getElementById("error_username").innerHTML = "Must be at least 4 Char";
+                flag = 0;
+            }else{
+                document.getElementById("error_username").innerHTML = "";
+                flag =1;
+            }
+
+            if(password.value == ""){
+                document.getElementById("error_password").innerHTML = "Password Required";
+                flag = 0;
+            }
+            else if(password.value.length < 4){
+                document.getElementById("error_password").innerHTML = "Must be at least 4 Char";
+                flag = 0;
+            }
+            else{
+                document.getElementById("error_password").innerHTML = "";
+                flag = 1;
+            }
+
+            if(flag){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
