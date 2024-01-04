@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="time">
+        <span class="digit" id="hr-dig">00</span>
+        <span class="text" id="hr">hr</span>
+
+        <span class="digit" id="min-dig">00</span>
+        <span class="text" id="min">min</span>
+
+        <span class="digit" id="sec-dig">00</span>
+        <span class="text" id="sec">sec</span>
+
+        <span class="digit" id="mili-sec-dig">00</span>
+       </div>
+
+       <div id="button_container">
+        <button class="btn" id="green" onclick="start()">Start</button>
+        <button class="btn" id="blue" onclick="stop()">Stop</button>
+        <button class="btn" id="red" onclick="restart()">Restart </button>
+       </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
