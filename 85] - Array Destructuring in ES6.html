@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let book = ["Atomic Habit", "james Clear", 1000, "4millions", 2010,["48 laws of Power" , "robert Greene"]];
+
+        // let name = book[0];
+        // let auther = book[1];
+        // let pages = book[2];
+        // let copies = book[3];
+        // let year = book[4];
+
+        // ! We can also write in way of array Destration 
+
+        let[name,auther,pages,copies,year,[Book_name,Book_authur]] = book;
+
+        console.log(`Boke name is ${name}
+        and auther is ${auther} 
+        and pages is ${pages} 
+        and total number of copies sold is ${copies} 
+         and year of publition is ${year}  
+         ${Book_name} ${Book_authur}`);
+
+
+
+         function fun(){
+            //Write Something
+            return ['Attitude is Every Thing', 'Jeff Keller'];
+         }
+
+         let[new_book_name, new_book_auther_name] =fun();
+
+         console.log(`new book name is ${new_book_name} and auther name is ${new_book_auther_name}`);
+
+    </script>
+</body>
+</html>
