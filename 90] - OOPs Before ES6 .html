@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hellow world</h1>
+    <Script>
+
+
+
+        // First way to create an Object
+        let person = {
+            name : "shoaib",   //We can creaet the object properties by two way like this name :
+            Last : 'khan',
+            age : 43,
+            "street No" : 36  // OR IF there are any space in the name of the property then we can use the double or single colun 
+
+            
+        };
+
+        // We can update or delete the property of the object outside the block code of the object
+        person.name = "Hamza";
+        person.sayHellow = function(){
+            alert("Hellow Word");
+        };
+        person.sayHellow();
+
+        // Delete the property is also possible
+        delete person.age;
+
+        console.log(person);
+
+
+        //accessing the properties of the Object by using dot operator
+        console.log(person.name); 
+
+        //accessing the properties of the Object by using [] sqare brackets
+        console.log(person["street No"]);
+
+
+
+
+
+        // Second Way is to create an empty object and then assigning the properties from outside of the object
+        let std = {};
+
+        std.name = "Student One Khan";
+        console.log(std.name);
+
+
+
+        // Third way is to create the Object by using new keyword
+
+        let doctor = new Object();
+        doctor.name = "Doctor One";
+        doctor.name = "Doctor Two";
+      
+        console.log(doctor.name);
+
+
+        // Creting Constructor in Object
+        function Police(NameP, LastP, AgeP, AddressP){
+            this.Name = NameP;
+            this.Last = LastP;
+            this.Age = AgeP;
+            this.Address = AddressP;
+
+            this.ChangeAge = function(newAge){
+                this.Age = newAge;
+            }
+        }
+
+        let Police1 = new Police('Shoaib','Khan',34,"Gunbad Maira");
+        Police1.ChangeAge(45333);
+        console.log(Police1);
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </Script>
+</body>
+</html>
