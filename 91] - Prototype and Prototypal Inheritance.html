@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       function Creature(ls){
+        this.lif_span = ls;
+       }
+
+       Creature.prototype.breathing = function(){
+        return "breathing................................";
+
+       }
+
+
+       let creature1 = new Creature(199);
+       console.log('the total life span of that creature is : ', creature1.lif_span);
+       creature1.breathing();
+
+        function Person(first, last, a){
+            this.first_name = first;
+            this.last_name = last;
+            this.age = a;
+        }
+
+        Person.prototype.fullName = function(){
+            return this.first_name, ' ', this.last_name;
+        }
+
+
+        Person.prototype.__proto__ = Object.create(Creature.prototype);   // inherited from creator
+
+        let person1 = new Person("shoaib",'khan',24,);
+        let person2 = new Person('Ubaid','u-Allah', 25);
+
+
+        console.log("hi my name is ",person1.fullName(), 'and my age is ', person1.age, 'and i am currently', person1.breathing());
+         console.log(person2.fullName());
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
