@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        class Person{
+
+           constructor(n,a){               // constructor is called automatically when Object is created
+            this.name = n;
+            this.age = a;
+           }
+
+           sayHy(){                //We create a function in class by just name of the function and () and curelly braces
+            console.log("Hi this is Person class first Function");
+           }
+
+           static HelloFunction(){    // this is static method which is called by the class name
+            console.log("Static Function............");
+           }
+
+           static staticProperty = "Hi this is static property";
+        }
+
+
+
+        let person1 = new Person('Shoaib Khan', 24);  //created an object for the person class and pass aurguments for constructor
+
+        console.log(person1);  
+        person1.sayHy();  // person1 function is called by usiing dot operator
+
+        Person.HelloFunction();  // static function is called by using the class name not the objeect name
+       
+        console.log(Person.staticProperty); // we can also use static property
+    
+    </script> -->
+
+
+
+    <!-- <script>
+        class employee{
+
+            
+            constructor(n){
+                // console.log("Employee constructor...");
+
+                this.name = n;
+            }
+            
+            msg(){
+                console.log("Hi this is employee msg...");
+            }
+        }
+
+        class manager extends employee{
+
+            constructor(p,dep){
+                super(p,dep)
+                this.department = dep;
+            }
+
+            msg(){
+                console.log("hellow this is manager msg...");
+            }
+
+
+            info(){
+                // Now there is two methods with the same name with different classes so which one will be called ..?
+                super.msg();
+                // so if we use super.msg() then the parent method will be called
+                // and if we use this.msg() then it's own  method will be called which is define in it's own class
+                console.log("My name is : ", this.name, " and I am the Manager of Department : ", this.department);
+            }
+        }
+
+
+        class admin extends manager{
+
+        }
+
+        let admin1 = new admin("shoaib","Software Engineer");
+        console.log(admin1);
+
+        console.log(admin1.info());
+    </script> -->
+
+
+
+     <!-- Public and Private -->
+
+    <!-- <script>
+
+        class emp{
+            #name = "";
+            constructor(n){
+                
+                this.#name = n;
+            }
+
+            #getName(){
+                console.log(this.#name);
+            }
+
+            getPrivateFun(){
+                this.#getName();
+            }
+        }
+
+        let emp1 = new emp("shoaib");
+        console.log(emp1);
+        console.log(emp1.getPrivateFun());
+
+
+
+    </script> -->
+
+
+    <!-- mixing -->
+
+    <script>
+        let UserfullMethod = {
+            sayHi(){
+                console.log("Hi ......");
+            },
+            sayBy(){
+                console.log("By ....");
+            }
+        };
+
+        
+
+
+        class user{
+            constructor(){
+                this.name = "Umar bin Khattab";
+            }
+
+        }
+
+
+        
+
+        Object.assign(user.prototype, UserfullMethod)
+
+
+        let user1 = new user();
+        console.log(user1.sayBy());
+
+
+
+
+    </script>
+</body>
+</html>
