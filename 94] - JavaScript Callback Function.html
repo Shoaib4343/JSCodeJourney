@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let SayHellow = () => console.log("Say Hellow");
+
+        let SayHi = () => console.log("Say Hi");
+
+        let Add = (a,b,callback) => {
+            console.log(a+b);
+            callback();
+        }
+
+
+        Add(2,3,SayHellow);
+        Add(4,5,SayHi);
+
+        Add(2,3,() => {
+            console.log("hi this is an annonymous function");
+        });
+
+
+    </script>
+</body>
+</html>
