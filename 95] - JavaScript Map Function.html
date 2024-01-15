@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3];
+        let arr1 = [];
+
+        // without map function
+        for(i in arr){
+            arr1[i] = arr[i]*2;
+        }
+        console.log(arr1);
+
+
+        // With Map function 
+        let arr2 = arr.map(function(val){
+            return val*2
+        });
+        console.log(arr2);
+
+        // Now with arrow function
+        let arr3 = arr.map((val2) => val2*2);
+        console.log(arr3);
+        
+    </script>
+</body>
+</html>
