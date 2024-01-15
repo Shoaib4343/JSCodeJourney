@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Hellow World</h1>
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+
+
+        let sumArrow = (a,b) =>{
+            return a+b;
+        }
+
+
+
+        // if there is one line in the arrow function then we write it in one line like:
+
+        let SumA = (a,b) => a+b;   //not needed the curly brackets and No need of return
+
+        //this is possible when  we have only one line in the function wheich return any thing
+
+
+
+
+
+        console.log(sum(2,3));
+        console.log(sumArrow(2,3)); 
+        console.log(SumA(2,3)); 
+
+
+
+
+
+
+
+
+
+
+        // doubling the number in arrow function
+
+        let doubleA = a => 2*a;    //if the parameter is also one so we don't have any need to () so we can write it without this brackets
+
+
+        let double = (a) => 2*a;
+
+
+
+        console.log(double(5*5));
+        console.log(doubleA(5*5));
+
+
+
+        let randomA = () => Math.floor(Math.random()*10);
+
+        console.log(randomA());
+
+
+
+
+
+        //Anounemous Function
+
+        document.addEventListener('click', () => console.log("Click"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
