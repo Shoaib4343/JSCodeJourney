@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [3,23,3,54,34,64,4,32,54,34,554,33,4,35,6775,433,5];
+        // let arr2 = arr.filter(function(val){
+        //     return val < 10;
+        // });
+
+        // console.log(arr2);
+
+
+
+        let team = [
+            { name: 'John', position: 'developer' },
+            { name: 'Alice', position: 'developer' },
+            { name: 'Bob', position: 'developer' },
+
+            { name: 'Charlie', position: 'designer' },
+            { name: 'David', position: 'designer' },
+            { name: 'Eva', position: 'designer' },
+
+            { name: 'Frank', position: 'manager' },
+            { name: 'Grace', position: 'manager' },
+            { name: 'Henry', position: 'manager' },
+
+            { name: 'Ivy', position: 'tester' },
+            { name: 'Jack', position: 'tester' },
+            { name: 'Kate', position: 'tester' },
+
+            { name: 'Liam', position: 'analyst' },
+            { name: 'Mia', position: 'analyst' },
+            { name: 'Nathan', position: 'analyst' },
+
+            { name: 'Olivia', position: 'engineer' },
+            { name: 'Peter', position: 'engineer' },
+            { name: 'Quinn', position: 'engineer' },
+
+            { name: 'Rachel', position: 'support' },
+            { name: 'Sam', position: 'support' },
+            { name: 'Tom', position: 'support' },
+        ];
+
+        let developer = team.filter(function(developer){
+            return developer.position == "developer";
+        });
+
+        let designer = team.filter(designer => designer.position == "designer");
+
+        let manager = team.filter(manager => manager.position == "manager");
+
+        let tester = team.filter(tester => tester.position == "tester") ;
+        let analyst = team.filter(analyst => analyst.position == "analyst");
+        let engineer = team.filter(engineer => engineer.position == "engineer");
+        let support = team.filter(support => support.position == "support");
+
+
+        console.log(support);
+        console.log(engineer);
+        console.log(analyst);
+        console.log(tester);
+        console.log(developer);
+        console.log(designer); 
+        console.log(manager);
+
+
+    </script>
+</body>
+</html>
