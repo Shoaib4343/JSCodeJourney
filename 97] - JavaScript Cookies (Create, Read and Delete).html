@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hellow world</h1>
+    
+    <script>
+        document.cookie = "items = Milk"; // we create cookies
+        document.cookie = "location = Pakistan";  // we create another cookie
+        document.cookie = "items = Milk,egg,bread; expires = Thu, 18 Jan 2024 00:00:00";  // expires cookie date
+
+        document.cookie = "items = Milk,egg,bread; expires = Thu, 01 Jan 1970 00:00:00"; // delete cookie by assign old date
+
+        
+        //display the cookie
+
+        let x = document.cookie;
+
+        alert(x);
+
+
+    </script>
+</body>
+</html>
