@@ -1,0 +1,27 @@
+{
+    "name" : "shoaib",
+    "age" : 24,
+    "address" : {
+        "city" : "mingora",
+        "street" : 36
+    },
+    "stdudents" : [
+        {
+            "name" : "imran",
+            "age" : 43
+        },
+        {
+            "name" : "imran",
+            "age" : 43
+        },
+        {
+            "name" : "imran",
+            "age" : 43
+        },
+        {
+            "name" : "imran",
+            "age" : 43
+        }
+
+    ]
+}
