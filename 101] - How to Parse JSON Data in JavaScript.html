@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = ` {
+    "studen" : [
+        {
+            "name" : "John",
+            "age" : 21
+        },
+        {
+            "name" : "imran",
+            "age" : 49
+        },
+        {
+            "name" : "ibrar",
+            "age" : 21
+        }
+        
+
+    ],
+    "school" : "the sahara school and college",
+    "phone" : 1234,
+    "address" : {
+        "city" : "mingora",
+        "street" : 35,
+        "is_open" : false
+    }
+}`;
+
+
+    let JsonData = JSON.parse(data);
+    console.log(JsonData);
+    </script>
+</body>
+</html>
