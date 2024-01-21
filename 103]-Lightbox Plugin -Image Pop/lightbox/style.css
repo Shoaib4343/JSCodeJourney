@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#viv_pop_up{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.826));
+    text-align:center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    z-index: 9999;
+    display: none;
+}
+
+#viv_pop_up #write{
+    position: absolute;
+    top: 40vh;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#viv_pop_up #left{
+    position: absolute;
+    top: 40vh;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#viv_pop_up #main_popup_image{
+    max-width: 80vw;
+    max-height: 80vh;
+    min-width: 80vw;
+    min-height: 80vh;
+    object-fit: cover;
+    margin: 3vh auto 0vh;
+}
+
+#viv_pop_up #pop_up_cross img{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
