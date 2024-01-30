@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contaner{
+            margin: 20vh 10%;
+        }
+        h1{
+            text-align: center;
+        }
+        .input_div{
+            display: flex;
+            justify-content: center;
+            background: teal;
+            padding: 40px;
+        }
+        label{
+            display: block;
+            font-size: 30px;
+            text-align: center;
+        }
+        input[type="number"]{
+            padding: 8px 20px;
+            outline: none;
+            margin: 10px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h1>Temprature Converter</h1>
+        <div class="input_div">
+            <div class="cel">
+                <label for="cel">Celsius</label> 
+                <input type="number" name="" id="cel" value="0" class="inp">
+
+            </div> 
+            <div class="fahr">
+                <label for="fahr">Fahrenheit</label>
+                <input type="number" name="" id="fahr" value="32" class="inp">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let cel = document.getElementById('cel');
+        let fahr = document.getElementById('fahr');
+
+
+        cel.addEventListener('input',function(){
+            let user_input_cel_value = this.value;
+            let new_fahr = ((user_input_cel_value * 9/5) + 32);
+            if(!Number.isInteger(new_fahr)){
+                new_fahr = new_fahr.toFixed(4);
+            }
+            fahr.value = new_fahr;
+        });
+
+
+        fahr.addEventListener('input', function(){
+            let user_input_fah_value = this.value;
+            let new_cel = ((user_input_fah_value - 32) * 5/9);
+            if(!Number.isInteger(new_cel)){
+                new_cel = new_cel.toFixed(4);
+            }
+            cel.value = new_cel;
+        });
+
+
+      
+
+
+
+
+    </script>
+</body>
+</html>
