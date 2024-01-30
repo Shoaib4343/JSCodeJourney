@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Json to Js</h1>
     <script>
         let data = ` {
     "studen" : [
@@ -36,6 +37,8 @@
 
     let JsonData = JSON.parse(data);
     console.log(JsonData);
+    console.log(JsonData["address"]["street"]);
+    console.log(JsonData["studen"][2]);
     </script>
 </body>
 </html>
