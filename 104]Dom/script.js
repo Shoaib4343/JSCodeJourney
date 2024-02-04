@@ -78,7 +78,96 @@
 
 
 // 2: appendChild()
-let parent2 = document.getElementById('parent2');
-let li = document.createElement('li');
-li.innerHTML = "this is li";
-parent2.appendChild(li);
+// let parent2 = document.getElementById('parent2');
+// let li = document.createElement('li');
+// li.innerHTML = "this is li";
+// parent2.appendChild(li);
+
+
+// 3: text Content
+
+// let parent = document.querySelector('.parent');
+// console.log(parent.textContent);
+// parent.textContent = "this is text";
+
+
+
+// 4: Inner HTML
+
+// let parent = document.querySelector('.parent');
+// parent.innerHTML  = "<h1> Heading !</h1> ";
+
+
+
+
+// 5: after();
+
+// let child = document.createElement('h1');
+// child.innerHTML = "this is a child";
+// let parent = document.querySelector('#parent');
+// parent.after(child);
+
+
+// 6: append();
+// let li1 = document.createElement('li');
+// li1.innerHTML = "child1";
+// let li2 = document.createElement('li');
+// li2.innerHTML = "li 2";
+// let li3 = document.createElement('li');
+// li3.innerHTML = "li 2";
+
+
+// let parent = document.getElementById('parent');
+// parent.append(li1, li2, li3);
+// parent.appendChild(li1,li2,li3);
+
+
+
+// 7: prepend
+
+// let parent = document.getElementById('parent');
+// let li_one = document.createElement('li');
+// li_one.innerHTML = 'this is li 1';
+// let li_two = document.createElement('li');
+// li_two.innerHTML = 'this is li 2';
+// let li_three = document.createElement('li');
+// li_three.innerHTML = 'this is li 3';
+// parent.prepend(li_one,li_two,li_three);
+
+// 8: insertAdjacentHTML
+
+// let parent = document.getElementById('parent');
+// parent.insertAdjacentHTML("beforebegin", "<li>Before Begin</li>");
+// parent.insertAdjacentHTML("afterbegin", "<li>After begin</li>");
+// parent.insertAdjacentHTML("beforeend", "<li>before end</li>");
+// parent.insertAdjacentHTML("afterend", "<li>After end</li>");
+
+
+
+// 9:replaceChild
+// let parent = document.getElementById('parent');
+// let oldchild = parent.firstElementChild;
+// let newchild = document.createElement('div');
+// newchild.innerHTML = '<li>New Child Eement</li>';
+// parent.replaceChild(newchild, oldchild);
+
+
+// 10: cloneNode
+
+// let parent = document.querySelector('#parent');
+// let newClone = parent.cloneNode(true);
+// console.log(newClone);
+
+// 11:removeChild
+
+// let parent = document.querySelector('#parent');
+// parent.removeChild(parent.firstElementChild);
+
+
+// 12: insertBefore
+
+// let parent = document.querySelector('#parent');
+// let newClone = document.createElement('div');
+// newClone.innerHTML = "<div class='newClone'>this is new inserbeore child</div>";
+
+// parent.insertBefore(newClone, parent.firstElementChild.nextElementSibling);
