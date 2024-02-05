@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        .menu-bar{
+            text-align: center;
+            background-color: teal;
+        }
+
+        .menu-bar li{
+            display: inline-block;
+            color: white;
+            padding: 15px 10px;
+            font-size: 18px ;
+            font-weight: bold;
+        }
+
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #about-img{
+            width: 100%;
+        }
+
+        p{
+            text-align: justify;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <div id="header">
+        <img src="logo.jpeg" alt="" id="logo">
+    </div>
+
+    <nav class="menu-bar ">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Home</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+
+    <div id="container">
+        <h1>About Us</h1>
+        <img src="image.jpg" alt="" id="about-img">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum temporibus, repellendus laudantium iure quibusdam ipsa. Maxime excepturi perferendis iure voluptatibus libero nihil laborum illum eum! Aspernatur delectus veritatis minus ratione impedit quia, quas suscipit. Impedit cupiditate illo corporis nostrum doloremque asperiores, omnis ex ipsa expedita consequatur incidunt a molestiae rerum blanditiis ipsam ut officiis totam earum iure! Deserunt id dolorem nemo consequatur totam expedita soluta possimus officiis consequuntur nihil perspiciatis iusto laborum repellat aliquid aperiam natus perferendis, sapiente eveniet omnis earum magnam iure fugit maxime. Aspernatur esse, maxime nemo sint, tempora autem quasi atque illum dignissimos, quia adipisci deserunt quas nisi non tenetur voluptatibus mollitia doloremque dolores voluptatum. Enim maiores veritatis voluptatum illum autem, eos tempore, unde quisquam voluptate magnam debitis numquam, nostrum porro. Iste saepe corporis perspiciatis sequi maxime voluptatem error non minus quasi consequuntur odit, dolores impedit ipsa expedita dolorum laudantium accusamus quod asperiores nemo velit vel earum? Nihil, eaque iure facilis assumenda fugit quaerat est dolorum inventore quibusdam perferendis cum, tempora optio labore molestiae rem velit esse, odio ipsum modi libero reiciendis nisi iusto architecto! Molestiae sapiente ut debitis nobis eum eaque unde voluptatibus quisquam laboriosam labore dolore eos, hic alias tempore ipsam. Fuga nostrum ex modi sit deserunt assumenda iure incidunt commodi porro quo harum quaerat placeat id temporibus esse, eius, necessitatibus deleniti cumque sunt aperiam omnis? Deleniti quo vel iusto culpa vitae aspernatur impedit quibusdam dignissimos, velit corporis, blanditiis explicabo similique, debitis harum ut! Nam doloribus expedita est quaerat et, quo reiciendis, accusamus non in vero laudantium voluptates nobis voluptatem nesciunt, laboriosam voluptatum. Tempore officiis porro molestiae nam adipisci aliquid repudiandae magnam doloribus impedit sint alias laudantium et, quas repellat eaque itaque commodi quasi. Aspernatur consectetur molestiae voluptas cum rem vel dolore esse labore corrupti totam, ad incidunt ipsam porro voluptatum, sed nobis saepe laudantium aliquid, autem asperiores beatae! Ducimus tempore, laborum excepturi, non in esse aspernatur dolorem magnam sapiente deleniti nobis est rem beatae incidunt quidem eos mollitia aperiam quos debitis reprehenderit ex similique, commodi sunt quibusdam. Repellat sed debitis inventore unde consequuntur. Eos, id ab adipisci, facilis esse alias, labore libero accusamus accusantium placeat fuga? Explicabo, quasi. Est ipsum ullam obcaecati quae perspiciatis corrupti blanditiis voluptate! Tempore, totam a repudiandae consequuntur delectus placeat qui? Ipsum nobis laudantium explicabo, fuga, fugit laboriosam sit impedit inventore labore voluptas ipsa. Consectetur velit autem itaque fuga hic? Iusto dignissimos nemo libero nisi tempora eos soluta mollitia quia ducimus sit suscipit ut ad, quod consequatur! Exercitationem qui consequuntur, reprehenderit veritatis labore minima aspernatur, inventore fugiat, eos ex cumque? Optio molestias similique laudantium animi reprehenderit iure possimus dolores officia cumque incidunt tempora ea veritatis, eaque vel explicabo ex vero cum mollitia quam rem debitis dolor placeat odit voluptates. Velit, veritatis eligendi quaerat odit quas tempore voluptatem, doloribus earum est in maxime maiores nihil suscipit? Sequi minus temporibus impedit? Laudantium aspernatur dolorum, in tenetur quia obcaecati cumque. Cupiditate, officiis, totam incidunt, reiciendis eligendi dolores necessitatibus nam quam excepturi animi eius asperiores vel at rem corporis fuga id porro? Hic, vero.
+        </p>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let nav = document.querySelector('.menu-bar');
+            if(window.pageYOffset >= 255){
+                nav.classList.add('sticky');
+            }
+            else{
+                nav.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
