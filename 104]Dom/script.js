@@ -1,29 +1,29 @@
-// // //select by id
-// // let heading = document.getElementById('heading');
-// // console.log(heading);
+// //select by id
+// let heading = document.getElementById('heading');
+// console.log(heading);
 
-// // // Select by class
-// // let list_items = document.getElementsByClassName('list_items');
-// // console.log(list_items);
-
-
-// // // Seclect by Name
-// // let radio = document.getElementsByName('language');
-// // console.log(radio);
-
-// // // Selcty by tag name
-// // let tag_name = document.getElementsByTagName('div');
-// // console.log(tag_name);
+// // Select by class
+// let list_items = document.getElementsByClassName('list_items');
+// console.log(list_items);
 
 
-// // // Select by querry selctor      In querry selection we can use the selection like css selections
-// // let querry_sel = document.querySelector('.container');
-// // console.log(querry_sel);
+// // Seclect by Name
+// let radio = document.getElementsByName('language');
+// console.log(radio);
+
+// // Selcty by tag name
+// let tag_name = document.getElementsByTagName('div');
+// console.log(tag_name);
+
+
+// // Select by querry selctor      In querry selection we can use the selection like css selections
+// let querry_sel = document.querySelector('.container');
+// console.log(querry_sel);
 
 
 
-// // let querry_sel_all = document.querySelectorAll('h1, .list_items');
-// // console.log(querry_sel_all);
+// let querry_sel_all = document.querySelectorAll('h1, .list_items');
+// console.log(querry_sel_all);
 
 
 
@@ -46,7 +46,7 @@
 // console.log(NextSibling);
 
 
-// Manipulating the html element
+// // Manipulating the html element
 // 1:Create a new element
 // let div = document.createElement('div');
 // div.innerHTML = '<p> Hi my Name is Mohammed Shoaib </p>';
@@ -77,14 +77,14 @@
 
 
 
-// 2: appendChild()
+// // 2: appendChild()
 // let parent2 = document.getElementById('parent2');
 // let li = document.createElement('li');
 // li.innerHTML = "this is li";
 // parent2.appendChild(li);
 
 
-// 3: text Content
+// // 3: text Content
 
 // let parent = document.querySelector('.parent');
 // console.log(parent.textContent);
@@ -92,7 +92,7 @@
 
 
 
-// 4: Inner HTML
+// // 4: Inner HTML
 
 // let parent = document.querySelector('.parent');
 // parent.innerHTML  = "<h1> Heading !</h1> ";
@@ -100,7 +100,7 @@
 
 
 
-// 5: after();
+// // 5: after();
 
 // let child = document.createElement('h1');
 // child.innerHTML = "this is a child";
@@ -108,7 +108,7 @@
 // parent.after(child);
 
 
-// 6: append();
+// // 6: append();
 // let li1 = document.createElement('li');
 // li1.innerHTML = "child1";
 // let li2 = document.createElement('li');
@@ -123,7 +123,7 @@
 
 
 
-// 7: prepend
+// // 7: prepend
 
 // let parent = document.getElementById('parent');
 // let li_one = document.createElement('li');
@@ -134,7 +134,7 @@
 // li_three.innerHTML = 'this is li 3';
 // parent.prepend(li_one,li_two,li_three);
 
-// 8: insertAdjacentHTML
+// // 8: insertAdjacentHTML
 
 // let parent = document.getElementById('parent');
 // parent.insertAdjacentHTML("beforebegin", "<li>Before Begin</li>");
@@ -144,7 +144,7 @@
 
 
 
-// 9:replaceChild
+// // 9:replaceChild
 // let parent = document.getElementById('parent');
 // let oldchild = parent.firstElementChild;
 // let newchild = document.createElement('div');
@@ -152,22 +152,42 @@
 // parent.replaceChild(newchild, oldchild);
 
 
-// 10: cloneNode
+// // 10: cloneNode
 
 // let parent = document.querySelector('#parent');
 // let newClone = parent.cloneNode(true);
 // console.log(newClone);
 
-// 11:removeChild
+// // 11:removeChild
 
 // let parent = document.querySelector('#parent');
 // parent.removeChild(parent.firstElementChild);
 
 
-// 12: insertBefore
+// // 12: insertBefore
 
 // let parent = document.querySelector('#parent');
 // let newClone = document.createElement('div');
 // newClone.innerHTML = "<div class='newClone'>this is new inserbeore child</div>";
 
 // parent.insertBefore(newClone, parent.firstElementChild.nextElementSibling);
+
+
+
+//**********************************************************************************************************
+
+
+// Attribute methods
+
+let user = document.getElementById('user');
+// console.log(user.attributes);
+
+// console.log(user.getAttribute("placeholder"));
+
+// console.log(user.setAttribute('class', "class1 class2 class3 class4 class5 class6 class7"));
+
+// console.log(user.hasAttribute('id'));
+console.log(user.hasAttribute('id'));
+
+console.log(user.removeAttribute('id'));
+console.log(user.hasAttribute('id'));
