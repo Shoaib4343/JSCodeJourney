@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form_container{
+            border: 2px solid rgba(255, 255, 255, 0.09);
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+        input{
+            
+            width: 200px;
+            margin: 7px 0px;
+            outline: none;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+
+            box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.4);
+
+        }
+        input[type="submit"] {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            
+        }
+        
+        input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .error{
+            /* color: red; */
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 0px;
+            margin-left: 10px;
+            max-height: 20px;
+        }
+       
+
+
+    </style>
+</head>
+<body style="background-image: url('images/gradient.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 95vh; display: flex; justify-content: center; align-items: center;" >
+
+
+
+
+    <div class="form_container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return ValidationForm()">
+            <input type="text" name="" id="username" placeholder="username"> <br>
+            <p class="error" id="user_error"></p>
+            <input type="password" name="" id="password" placeholder="password"> <br>
+            <p class="error" id="pass_error"></p>
+            <input type="submit" name="" id="submit">
+        </form>
+    </div>
+
+
+
+    <script>
+        
+        let username = document.getElementById('username');
+        let password = document.getElementById('password');
+        let flag = 1;
+
+        function ValidationForm(){
+
+            if(username.value == ""){
+                document.getElementById('user_error').innerHTML = "Please enter a username";
+                flag = 0;
+            }
+            else if(username.value.length < 4){
+                document.getElementById('user_error').innerHTML = "username must be at least 4 characters";
+                flag = 0;
+            }
+            else{
+                document.getElementById('user_error').innerHTML = "";
+                flag = 1;
+            }
+            if(password.value == ""){
+                document.getElementById('pass_error').innerHTML = "Please enter Password";
+                flag = 0;
+
+            }
+            else if(password.value.length < 4){
+                document.getElementById('pass_error').innerHTML = "Password must be at least 4 characters";
+                flag = 0;
+
+
+            }
+            else{
+                document.getElementById('pass_error').innerHTML = "";
+                flag = 1;
+
+            }  
+            if(flag){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
+    
+</body>
+</html>
