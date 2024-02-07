@@ -179,7 +179,7 @@
 
 // Attribute methods
 
-let user = document.getElementById('user');
+// let user = document.getElementById('user');
 // console.log(user.attributes);
 
 // console.log(user.getAttribute("placeholder"));
@@ -187,7 +187,60 @@ let user = document.getElementById('user');
 // console.log(user.setAttribute('class', "class1 class2 class3 class4 class5 class6 class7"));
 
 // console.log(user.hasAttribute('id'));
-console.log(user.hasAttribute('id'));
+// console.log(user.hasAttribute('id'));
 
-console.log(user.removeAttribute('id'));
-console.log(user.hasAttribute('id'));
+// console.log(user.removeAttribute('id'));
+// console.log(user.hasAttribute('id'));
+
+
+//**********************************************************************************************************
+
+
+// Manipulating Element Styles
+
+// let elm = document.getElementById("user");
+
+//  //      1.style
+// elm.style.border = "10px solid green";
+// console.log(elm.style);
+// console.log(elm.style.fontSize);
+// console.log(elm.style);
+
+// //      2:csstext
+// elm.style.cssText += "width : 800px; height :300px";
+// console.log(elm.style.cssText);
+
+
+// //                3:getComputedStyle
+
+// console.log(window.getComputedStyle(elm));
+// console.log(window.getComputedStyle(elm).fontWeight);
+
+
+// //                 4:className
+// let elmClass = document.getElementById('h1');
+// elmClass.className += " ONe";
+// console.log(elmClass);
+
+
+// // 5:classList
+
+let elm = document.getElementById('h1');
+// console.log(elm.classList);
+
+elm.classList.add('NEW', "TWO", "THREE", "four");
+console.log(elm.classList);
+
+elm.classList.remove('NEW', "TWO", "THREE", "four");
+console.log(elm.classList);
+
+
+elm.classList.replace("sport", "shahab");
+console.log(elm.classList)
+
+
+
+console.log(elm.classList.contains("shahab"));
+
+elm.classList.toggle("shahab");
+console.log(elm.classList);
