@@ -73,6 +73,6 @@ let Stop_Watch = () =>{
 
 
 
-        setTimeout("Stop_Watch()",10);
+        setTimeout(Stop_Watch,10);
     }
 }
