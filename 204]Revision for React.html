@@ -7,9 +7,82 @@
 </head>
 <body>
 
+    <!-- Class Revision -->
+    <script>
+        class Person{
+            #age;
+            constructor(n,age){
+                this.name = n;
+                this.#age = age;
+            }
+
+            msg(){
+                console.log(`this is parent class and this is private property -> ${this.#age} ...`);
+            }
+        }
+
+
+        class Employee extends Person{
+            constructor(n,dep,age){
+                super(n,age);
+                this.department = dep;
+
+            }
+
+            #msg(){
+                console.log(this.name, "and his department is : ", this.department, "and this is the private msg");
+            }
+
+            info(){
+                super.msg();
+                this.#msg();
+            }
+        }
+
+        let Obj = {
+             sayHi :() => {
+                console.log(`Say Hi`);
+            },
+            sayBy : ()=>{
+                console.log(`Say By`);
+            }
+        }
+
+        Object.assign(Employee.prototype, Obj);
+
+        let Employee1 = new Employee("shoaib", "Software Engineer",12);
+        
+        console.log(Employee1);
+
+
+
+        
+        
+        
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- 10 question of arrow functino -->
-    <script>
+    <!-- <script>
         // Write an arrow function to add two numbers.
         const add = (num1, num2) => num1 + num2;
         console.log(add(4,3));
@@ -54,17 +127,10 @@
 
         
 
-    </script>
+    </script> -->
 
-
-
-
-
-
-
-    
     <!-- arrow function  -->
-    <script>
+    <!-- <script>
         // 1:
         // const multiple = (x,y) =>{
         //     return x*y;
@@ -86,6 +152,6 @@
 
         // console.log(multiple(multiple.username));
         // console.log(multiple(3,4));        
-    </script>
+    </script> -->
 </body>
 </html>
