@@ -165,4 +165,5 @@ button.addEventListener("click",()=>{
     let random = Math.floor(Math.random() * query.length);
     qoute.innerHTML = query[random].quote;
     auther.innerHTML = query[random].author;
+//  id.it's innertext = array[index].object property
 });
